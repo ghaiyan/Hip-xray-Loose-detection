@@ -1,6 +1,7 @@
 # Hip-xray-Loose-detection
 
 > 髋关节植入物松动检测项目，基于 X 光片图像的二分类模型训练、评估与可解释性分析。
+> Dataset source：T. Rahman, A. Khandakar, K. R. Islam, et al. HipXNet: deep learning approaches to detect aseptic loosening of hip implants using X-ray images. IEEE Access, 10:53359-53373, 2022.
 
 ## 项目概述
 
@@ -16,12 +17,6 @@
 ## 目录结构
 
 ```text
-Data/                  # 数据目录
-  train/               # 训练集目录
-    Control/           # Control 类图像
-    Loose/             # Loose 类图像
-  val/                 # 验证集目录（同样按照 Control/Loose 分类）
-
 src/                   # 项目源码
   config.py            # 全局配置 dataclass
   dataset.py           # 数据集、CLAHE 与 DataLoader
